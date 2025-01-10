@@ -1,0 +1,437 @@
+/* rem en em do NOT depend on html font-size in media queries! instead, 1rem = 1em = 16px */
+
+/* Because of some bugs in rem use em in media queries! */
+
+/***********************************/
+/* BELOW 1344PX (Smaller Desktp)*/
+/***********************************/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+}
+
+/***********************************/
+/* BELOW 1200PX (Landscape Tablets)*/
+/***********************************/
+
+@media (max-width: 75em) {
+  html {
+    /* 9px / 16px = 0.5625 which is 56.25% */
+    font-size: 56.25%;
+  }
+
+  .grid {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2.4rem;
+  }
+
+  .hero {
+    gap: 4.8rem;
+  }
+
+  .main-nav-list {
+    gap: 3.2rem;
+  }
+
+  .pop-dishes-section {
+    padding: 4.8rem 0;
+  }
+}
+
+/***********************************/
+/* BELOW 1040PX (Tablets)    */
+/***********************************/
+
+@media (max-width: 66em) {
+  html {
+    /* 8px / 16px = 0.5 which is 50% */
+    font-size: 50%;
+  }
+
+  .brief-info-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    padding: 1rem;
+  }
+
+  .address,
+  .open-time,
+  .reserv-text {
+    font-size: 1.6rem;
+  }
+
+  .address strong,
+  .open-time strong,
+  .reserv-text strong {
+    font-size: 2rem;
+  }
+
+  .our-story {
+    padding: 8rem 0;
+  }
+
+  .pop-dishes-section {
+    padding: 4.8rem 0;
+  }
+}
+
+/***********************************/
+/* BELOW 896PX (Tablets)    */
+/***********************************/
+
+@media (max-width: 56em) {
+  html {
+    /* 7px / 16px = 0.437 which is 44% */
+    font-size: 44%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 8rem;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .address,
+  .open-time,
+  .reserv-text {
+    font-size: 1.4rem;
+  }
+
+  .copyright {
+    font-size: 1.4rem;
+  }
+
+  .menu-list {
+    font-size: 2rem;
+  }
+
+  .pop-dishes-section {
+    padding: 4.8rem 0;
+  }
+
+  .contact-form-txt {
+    width: 24rem;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 1500;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* 
+     display: none;
+    To hide the mobile nav we can't use 
+    display: none; becuase it doesn't allow transitions at all
+     */
+
+    /* Here are the steps needed to hide the mobile nav visually */
+
+    /* 1. Set the opacity to 0 */
+    opacity: 0;
+
+    /* 2. make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3. Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    /* gap: 4.8rem; */
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    color: #333;
+    font-size: 3rem;
+  }
+
+  .main-nav-link.nav-cta {
+    color: white;
+  }
+}
+
+/***********************************/
+/* BELOW 752PX (Smaler Tablet)    */
+/***********************************/
+
+@media (max-width: 47em) {
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-img {
+    width: 90%;
+  }
+
+  .reserv {
+    grid-column: -3 / -1;
+    justify-self: center;
+  }
+
+  .address,
+  .open-time,
+  .reserv-text {
+    font-size: 1.6rem;
+  }
+
+  .our-story {
+    padding: 4.8rem 0 9.6rem 0;
+  }
+
+  .story-img-box {
+    border-right: none;
+    padding-right: 0;
+    justify-self: center;
+  }
+
+  .story {
+    text-align: center;
+  }
+
+  .offer-grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .offer-msg {
+    text-align: center;
+  }
+
+  .offers {
+    padding: 0 4.8rem;
+  }
+
+  .menu-section {
+    padding: 3.6rem 0 3.6rem;
+  }
+
+  .dishes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .last-gallery-dish {
+    grid-column: -3 / -1;
+    justify-self: center;
+  }
+
+  .see-dishes-btn {
+    grid-column: -3 / -1;
+    justify-self: center;
+  }
+
+  .grid--footer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .logo-col {
+    grid-row: 2;
+    grid-column: 1 / -1;
+  }
+
+  .search-box input {
+    width: 150%;
+  }
+
+  .search-icon {
+    top: 30%;
+    right: 65%;
+  }
+
+  .booking-confirm-msg {
+    font-size: 1.7rem;
+  }
+
+  .feedback-ack-msg h2 {
+    font-size: 3.6rem;
+  }
+
+  .feedback-ack-text {
+    font-size: 1.7rem;
+  }
+}
+
+/***********************************/
+/* BELOW 544PX (Mobile)    */
+/***********************************/
+
+@media (max-width: 34em) {
+  .hero-img {
+    width: 100%;
+  }
+
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .section-brief-info {
+    padding: 4.8rem 0;
+  }
+
+  .reserv {
+    grid-row: 2;
+    grid-column: 1;
+    justify-self: start;
+    padding-left: 8rem;
+  }
+
+  .location,
+  .open-hours {
+    justify-self: start;
+    padding-left: 8rem;
+  }
+
+  .contact-msg {
+    font-size: 2.4rem;
+    margin-bottom: 3.6rem;
+  }
+
+  .booking-confirm-msg {
+    font-size: 1.6rem;
+  }
+
+  .confirmed-icon {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+
+  .feedback-ack-text {
+    font-size: 1.6rem;
+  }
+
+  .offers {
+    padding: 0;
+  }
+}
+
+/***********************************/
+/* BELOW 400PX (Mobile)    */
+/***********************************/
+
+@media (max-width: 25em) {
+  .hero-heading {
+    font-size: 5.2rem;
+  }
+
+  .dishes {
+    grid-template-columns: 1fr;
+  }
+
+  .last-gallery-dish {
+    grid-row: 3;
+    grid-column: 1;
+    justify-self: normal;
+  }
+
+  .see-dishes-btn {
+    grid-column: 1;
+  }
+
+  .menu-section {
+    padding: 3.6rem 0 3.6rem;
+  }
+
+  .our-story {
+    padding: 4.8rem 0 4.8rem 0;
+  }
+
+  .offer {
+    padding: 2.4rem;
+  }
+
+  .gap-section {
+    padding: 4.4rem 0;
+  }
+
+  .grid--footer {
+    grid-template-columns: 1fr;
+    row-gap: 4.4rem;
+  }
+
+  .logo-col {
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  .contact-col {
+    justify-self: center;
+  }
+
+  .footer-social {
+    justify-self: center;
+  }
+
+  .footer-contact,
+  .footer-address,
+  .footer-tel,
+  .footer-link,
+  .footer-email {
+    font-size: 1.4rem;
+  }
+
+  .story-img {
+    width: 40rem;
+    height: 40rem;
+  }
+}
+/* - FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/* - SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */

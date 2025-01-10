@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peasher Restaurant</title>
+
+    <link rel="icon" href="img/favicon.png" />
+
+    <link rel="apple-touch-icon" href="img/apple-favicon.png" />
+
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="CSS/general.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img class="logo" alt="Peasher logo" src="logo/final logo s.png" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="index.html">Home</a></li>
+          <li><a class="main-nav-link" href="index.html#about">About</a></li>
+          <li><a class="main-nav-link" href="menu.html">Menu</a></li>
+          <li>
+            <a class="main-nav-link" href="index.html#reservation"
+              >Reservation</a
+            >
+          </li>
+          <li>
+            <a class="main-nav-link nav-cta" href="contact-us.html"
+              >Contact us</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="contact-section">
+        <div class="container">
+          <div class="contact-page">
+            <div class="contact-heading">
+              <h3 class="contact-msg">Send Valuable Feedback To Us</h3>
+            </div>
+            <form class="contact-form" action="#">
+              <input
+                id="full-name"
+                type="text"
+                placeholder="Your Name"
+                required
+              />
+              <input id="email" type="email" placeholder="Email" required />
+              <input id="subject" type="text" placeholder="Subject" required />
+              <input id="mobile" type="tel" placeholder="Mobile" required />
+              <textarea placeholder="Message" required></textarea>
+              <button type="submit" class="c-btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer-section">
+        <div class="container grid--footer">
+          <div class="contact-col">
+            <p class="footer-heading footer-contact">Contact</p>
+            <p class="footer-address">63 High Street, Gravesend DA11 0B</p>
+            <p class="footer-tel">
+              Tel:
+              <a class="footer-link" href="tel:01474535932">01474535932</a>
+            </p>
+            <br />
+            <a
+              class="footer-link footer-email"
+              href="mailto:info@peasherrestaurant.com"
+            >
+              info@peasherrestaurant.com</a
+            >
+          </div>
+          <div class="logo-col">
+            <a href="#">
+              <img
+                class="logo footer-logo"
+                alt="Peasher logo"
+                src="logo/final logo s.png"
+              />
+            </a>
+            <p class="newsletter-text">
+              Join our mailing list for updates, offers, and events.
+            </p>
+            <div subscribe-input>
+              <input id="subscribe" type="text" placeholder="Email" required />
+            </div>
+            <div>
+              <a href="#" class="subscribe-link subscribe-btn">Subscribe </a>
+            </div>
+
+            <p class="copyright">
+              Copyright &copy; Peasher
+              <span class="year"> 2027</span> &VerticalSeparator; Designed by
+              LabSquared, Inc. All right reserved
+            </p>
+          </div>
+          <div class="footer-social">
+            <ul class="social-link">
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon
+                    class="social-icon"
+                    name="logo-instagram"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+                ></a>
+              </li>
+            </ul>
+            <p class="footer-opening-time">Open Hours</p>
+            <p class="footer-time">Mon To Thur &ndash; 13:00 &ndash; 22:30</p>
+            <p class="footer-time">Friday &ndash; 13:00 &ndash; 02:30</p>
+            <p class="footer-time">Saturday &ndash; 13:00 &ndash; 23:00</p>
+            <p class="footer-time">Sunday &ndash; 13:00 &ndash; 20:00</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

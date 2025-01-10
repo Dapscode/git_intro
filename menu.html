@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peasher Restaurant</title>
+
+    <link rel="icon" href="img/favicon.png" />
+
+    <link rel="apple-touch-icon" href="img/apple-favicon.png" />
+
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="CSS/general.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script
+      defer
+      src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+    ></script>
+
+    <script defer src="js/script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#">
+        <img class="logo" alt="Peasher logo" src="logo/final logo s.png" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="index.html">Home</a></li>
+          <li><a class="main-nav-link" href="index.html#about">About</a></li>
+          <li><a class="main-nav-link" href="menu.html">Menu</a></li>
+          <li>
+            <a class="main-nav-link" href="index.html#reservation"
+              >Reservation</a
+            >
+          </li>
+          <li>
+            <a class="main-nav-link nav-cta" href="contact-us.html"
+              >Contact us</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+
+    <main>
+      <section class="menu-section">
+        <div class="container menu">
+          <span class="subheading menu-heading">Menu</span>
+          <h3 class="pop-dishes">Popular Dishes</h3>
+          <p class="menu-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui sit
+            laudantium ducimus ad? Velit pariatur ipsa sunt sapiente illo qui
+            recusandae porro explicabo voluptatum natus similique laborum,
+            provident totam mollitia.
+          </p>
+        </div>
+      </section>
+
+      <section class="dish-gallery-section">
+        <div class="container dishes">
+          <figure class="gallery-item">
+            <div class="meal-img-box">
+              <img
+                src="img/food/okro_soup_2.webp"
+                class="meal-img"
+                alt="A plate of okro soup"
+              />
+            </div>
+            <div class="meal-description">
+              <span class="meal-name">Okro Soup</span>
+              <strong class="meal-price">£20</strong>
+            </div>
+            <button class="order-btn">
+              <a class="order-link" href="#">Order now</a>
+            </button>
+          </figure>
+          <figure class="gallery-item">
+            <div class="meal-img-box">
+              <img
+                src="img/food/jollof_rice_meat_stew.webp"
+                class="meal-img"
+                alt="A plate of Jollof rice"
+              />
+            </div>
+            <div class="meal-description">
+              <span class="meal-name">Jollof Rice</span>
+              <strong class="meal-price">£20</strong>
+            </div>
+            <button class="order-btn">
+              <a class="order-link" href="#">Order now</a>
+            </button>
+          </figure>
+          <figure class="gallery-item last-gallery-dish">
+            <div class="meal-img-box">
+              <img
+                src="img/food/egusi_soup_1.webp"
+                class="meal-img"
+                alt="A plate of egusi soup"
+              />
+            </div>
+            <div class="meal-description">
+              <span class="meal-name">Egusi Soup</span>
+              <strong class="meal-price">£20</strong>
+            </div>
+            <button class="order-btn">
+              <a class="order-link" href="#">Order now</a>
+            </button>
+          </figure>
+          <button class="all-dishes-btn see-dishes-btn">
+            <a class="order-link" href="popular-dishes.html">See all dishes</a>
+          </button>
+        </div>
+      </section>
+
+      <section class="food-banner">
+        <div class="container menu-banner"></div>
+      </section>
+
+      <section class="main-menu-section">
+        <div class="container main-menu">
+          <h1 class="menu-h1"><strong>Menu</strong></h1>
+
+          <div class="grid grid--2-cols">
+            <div class="left-menu">
+              <h2 class="menu-h2"><strong>Starters</strong></h2>
+              <span class="menu-list">
+                <p class="menu-item">Spring roll / samosa</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Crab Claws</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Puff Puff</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Meat Pie/Chicken Pie/Fish Pie</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Asun</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Snails</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Beer Meat</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">King Prawn</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Moi Moi</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Fried Plantain/Fried Yam</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Peppered smoke turkey</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list last-menu">
+                <p class="menu-item">Dodo Gizzard</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+
+              <h2 class="menu-h2"><strong>Grills</strong></h2>
+              <span class="menu-list">
+                <p class="menu-item">Whole Grilled Tilapia Fish Served</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Whole Grilled Croaker Fish Served</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Tozo Suya</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list last-menu">
+                <p class="menu-item">Chicken Suya</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+
+              <h2 class="menu-h2"><strong>Peper Soups</strong></h2>
+              <span class="menu-list">
+                <p class="menu-item">Assorted Goat Meat</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Oxtail</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Catfish</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list last-menu">
+                <p class="menu-item">Tilapia</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+
+              <h2 class="menu-h2"><strong>Beans Dishes</strong></h2>
+              <span class="menu-list">
+                <p class="menu-item">Ewa Aganyin</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Ewa Riro</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list last-menu">
+                <p class="menu-item">Rice and Beans</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+
+              <h2 class="menu-h2"><strong>Yam and Plantain Dishes</strong></h2>
+              <span class="menu-list">
+                <p class="menu-item">Boiled Yam</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Fried Yam</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Fried Plantain</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Yam and Egg Omelette</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list last-menu">
+                <p class="menu-item">Yam Pottage</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+            </div>
+            <div class="right-menu">
+              <h2 class="menu-h2"><strong>Main Course</strong></h2>
+              <span class="menu-list">
+                <p class="menu-item">Jollof Rice, served with fried plantain</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Fried Rice, served with fried plantain</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">White Rice, served with fried plantain</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-choice">
+                  &nbsp;&nbsp;with a choice of: Beef, Chicken or Assorted Meat
+                </p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Fried Fish</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Fresh Fish</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Stock Fish</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Smpoked Fish</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list last-menu">
+                <p class="menu-item">Ayamase</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+
+              <h2 class="menu-h2"><strong>Soups</strong></h2>
+              <span class="menu-list">
+                <p class="menu-item">Efo Riro</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Egusi</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Okro or Ewedu with Tomato Sauce</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Okro Ogbono</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Seafood Okro</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Mix Okro</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Ogbono</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Edikang ikon</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Afang</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Abula</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Banga Soup</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Bitter Leaf Soup</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list last-menu">
+                <p class="menu-item">Oha Soup</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+
+              <h2 class="menu-h2"><strong>Special Order Disches</strong></h2>
+              <span class="menu-list">
+                <p class="menu-item">Isi ewu</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">NKWOBI</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list last-menu">
+                <p class="menu-item">Ugba and Stock Fish</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+
+              <h2 class="menu-h2"><strong>Extra Portions</strong></h2>
+              <span class="menu-list">
+                <p class="menu-item">Pounded Yam</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Assorted Meat</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Beef and Chicken</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Fried Fish</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Fresh Fish</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Dried Smoked Fish</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Stock Fish</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Jollof Rice, Fried Rice or White Rice</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Egusi</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Efo Riro</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Okro</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list last-menu">
+                <p class="menu-item">Ogbono</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+            </div>
+          </div>
+          <h1 class="menu-h1"><strong>Drinks</strong></h1>
+          <div class="grid grid--2-cols">
+            <div class="left-menu">
+              <h2 class="menu-h2"><strong>Non Alcoholic</strong></h2>
+              <span class="menu-list">
+                <p class="menu-item">Water &#40;Still&#41;</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Water &#40;Sparkling&#41;</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">
+                  Can&dash;Coke &#40;Diet&#41;, Fanta, Sprite,7up
+                </p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Nigerian Fanta</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Nigerian Coke</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Malta Guinness / Afrimalt</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">J20</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Red Bull</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Apple Juice</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Orange Juice</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Pineapple Juice</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list last-menu">
+                <p class="menu-item">Chapman</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+
+              <h2 class="menu-h2"><strong>Wine</strong></h2>
+              <span class="menu-list">
+                <p class="menu-item">White Wine</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Red Wine</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Rose Wine</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list last-menu">
+                <p class="menu-item">Mateus Wine</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+
+              <h2 class="menu-h2"><strong>Champagne</strong></h2>
+              <span class="menu-list">
+                <p class="menu-item">Bollinger</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Moet</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Lanson</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Belaire Luxe</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list last-menu">
+                <p class="menu-item">Asti Martini</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+            </div>
+            <div class="right-menu">
+              <h2 class="menu-h2"><strong>Alcoholic</strong></h2>
+              <span class="menu-list">
+                <p class="menu-item">Heineken</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Budweiser</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Palm Wine</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Star &#40;Nigerian&#41;</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Gulder &#40;Nigerian&#41;</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Guinness Large &#40;Nigerian&#41;</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Guinness Small &#40;Nigerian&#41;</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list last-menu">
+                <p class="menu-item">Smirnoff Ice</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+
+              <h2 class="menu-h2"><strong>Spirit</strong></h2>
+              <span class="menu-list">
+                <p class="menu-item">Alize</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Baileys</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Tia Maria</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Malibu</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Barcardi</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Courvoisor</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Hennessey</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Jack Daniels</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Martel</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list">
+                <p class="menu-item">Remy Martin</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+              <span class="menu-list last-menu">
+                <p class="menu-item">Tequila</p>
+                <p class="menu-price">£<strong>20</strong></p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer-section">
+        <div class="container grid--footer">
+          <div class="contact-col">
+            <p class="footer-heading footer-contact">Contact</p>
+            <p class="footer-address">63 High Street, Gravesend DA11 0B</p>
+            <p class="footer-tel">
+              Tel:
+              <a class="footer-link" href="tel:01474535932">01474535932</a>
+            </p>
+            <br />
+            <a
+              class="footer-link footer-email"
+              href="mailto:info@peasherrestaurant.com"
+            >
+              info@peasherrestaurant.com</a
+            >
+          </div>
+          <div class="logo-col">
+            <a href="#">
+              <img
+                class="logo footer-logo"
+                alt="Peasher logo"
+                src="logo/final logo s.png"
+              />
+            </a>
+            <p class="newsletter-text">
+              Join our mailing list for updates, offers, and events.
+            </p>
+            <div subscribe-input>
+              <input id="subscribe" type="text" placeholder="Email" required />
+            </div>
+            <div>
+              <a href="#" class="subscribe-link subscribe-btn">Subscribe </a>
+            </div>
+
+            <p class="copyright">
+              Copyright &copy; Peasher
+              <span class="year"> 2027</span> &VerticalSeparator; Designed by
+              LabSquared, Inc. All right reserved
+            </p>
+          </div>
+          <div class="footer-social">
+            <ul class="social-link">
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon
+                    class="social-icon"
+                    name="logo-instagram"
+                  ></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-facebook"></ion-icon
+                ></a>
+              </li>
+              <li>
+                <a class="footer-link" href="#"
+                  ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+                ></a>
+              </li>
+            </ul>
+            <p class="footer-opening-time">Open Hours</p>
+            <p class="footer-time">Mon To Thur &ndash; 13:00 &ndash; 22:30</p>
+            <p class="footer-time">Friday &ndash; 13:00 &ndash; 02:30</p>
+            <p class="footer-time">Saturday &ndash; 13:00 &ndash; 23:00</p>
+            <p class="footer-time">Sunday &ndash; 13:00 &ndash; 20:00</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
